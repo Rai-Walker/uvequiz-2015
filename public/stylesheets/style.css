@@ -1,8 +1,94 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+	background: #7db9e8;
+	background: -moz-radial-gradient(center, ellipse cover,  #7db9e8 8%, #7db9e8 8%, #2989d8 38%, #207cca 49%, #1e5799 99%, #1e5799 99%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(8%,#7db9e8), color-stop(8%,#7db9e8), color-stop(38%,#2989d8), color-stop(49%,#207cca), color-stop(99%,#1e5799), color-stop(99%,#1e5799));
+	background: -webkit-radial-gradient(center, ellipse cover,  #7db9e8 8%,#7db9e8 8%,#2989d8 38%,#207cca 49%,#1e5799 99%,#1e5799 99%);
+	background: -o-radial-gradient(center, ellipse cover,  #7db9e8 8%,#7db9e8 8%,#2989d8 38%,#207cca 49%,#1e5799 99%,#1e5799 99%);
+	background: -ms-radial-gradient(center, ellipse cover,  #7db9e8 8%,#7db9e8 8%,#2989d8 38%,#207cca 49%,#1e5799 99%,#1e5799 99%);
+	background: radial-gradient(ellipse at center,  #7db9e8 8%,#7db9e8 8%,#2989d8 38%,#207cca 49%,#1e5799 99%,#1e5799 99%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=1 );
+
 }
 
+	.page-wrap {
+	}
+		
+		.main-header, .main-footer {
+			height: 3rem;
+			padding: 8px;
+			border: 3px double #3b679e;
+			background-color: black;
+			overflow: hidden;
+		}
+
+			.main-title {
+				font-size: 2rem;
+				color: white;
+				margin: 0;
+				position: relative;
+				left: 35%;
+				word-spacing: 30px;
+			}
+		.main-nav {
+			margin-top: 8px;
+			border-bottom: 3px double #3b679e;
+			background-color: black;
+		}
+			.menu {
+				list-style: none;
+				margin: 0 auto;
+				padding: 0;
+			}
+				.menu-item {
+					text-align: center;
+					display: inline-block;
+					width: 45%;
+					border-left: 3px double #3b679e;
+				}
+				.menu-item:first-child {border-left: none;}
+					.menu-link {
+						color: white;
+						text-decoration: none;
+						font-size: 1.3rem;
+					}
+					.menu-link:hover {
+						color: yellow;
+						text-shadow: 0 0 3.2px yellow,
+									 0 0 3.2px yellow;
+					}
+		.main-section {
+				text-align: center;
+		}
+		.main-footer {
+			text-align: center;
+			line-height: 3rem;
+			position: absolute;
+			bottom: 0;
+			width: calc(100% - 24px);
+		}
+
 a {
-  color: #00B7FF;
+  color: white;
+  text-shadow: 0 0 3.2px #00B7FF,
+			   0 0 3.2px #00B7FF;
+}
+a:hover {
+	  text-shadow: none;
+}
+
+.borrar {
+	font-size: 0;
+}
+@media screen and (min-width: 500px) {
+	.borrar {font-size: 1.5rem;}
+	.main-title {
+		text-align: center;
+		font-size: 1.5rem;
+		line-height: 46px;
+		left: 0;
+		word-spacing: 2px;
+	}
 }
