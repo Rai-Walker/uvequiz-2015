@@ -27,15 +27,21 @@ body {
 			.main-title {
 				font-size: 2rem;
 				color: white;
-				margin: 0;
-				position: relative;
-				left: 35%;
-				word-spacing: 30px;
+				text-align: center;
+				line-height: 0px;
 			}
 		.main-nav {
 			margin-top: 8px;
 			border-bottom: 3px double #3b679e;
 			background-color: black;
+		}
+		@media screen and (min-width: 600px) {
+			.main-nav {
+				width: 160px;
+				position: absolute;
+				height: calc(100vh - 82px);
+				border-right: 3px double #3b679e;
+			}
 		}
 			.menu {
 				list-style: none;
@@ -47,6 +53,15 @@ body {
 					display: inline-block;
 					width: 45%;
 					border-left: 3px double #3b679e;
+				}
+				@media screen and (min-width: 600px) {
+					.menu-item {
+						width: 100%;
+						display: block;
+						padding-bottom: 8px;
+						border-bottom: 3px double #3b679e;
+						text-align: center;
+					}
 				}
 				.menu-item:first-child {border-left: none;}
 					.menu-link {
@@ -82,13 +97,6 @@ a:hover {
 .borrar {
 	font-size: 0;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 480px) {
 	.borrar {font-size: 1.5rem;}
-	.main-title {
-		text-align: center;
-		font-size: 1.5rem;
-		line-height: 46px;
-		left: 0;
-		word-spacing: 2px;
-	}
 }
