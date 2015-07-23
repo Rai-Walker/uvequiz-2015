@@ -51,19 +51,16 @@ body {
 				.menu-item {
 					text-align: center;
 					display: inline-block;
-					width: 45%;
-					border-left: 3px double #3b679e;
+					width: 100%;
 				}
 				@media screen and (min-width: 600px) {
 					.menu-item {
-						width: 100%;
 						display: block;
 						padding-bottom: 8px;
 						border-bottom: 3px double #3b679e;
 						text-align: center;
 					}
 				}
-				.menu-item:first-child {border-left: none;}
 					.menu-link {
 						color: white;
 						text-decoration: none;
@@ -115,3 +112,17 @@ a:hover {
 @media screen and (min-width: 480px) {
 	.borrar {font-size: 1.5rem;}
 }
+
+.circulo {
+	width: 150px;
+	height: 150px;
+	border: 3px double blue;
+	border-radius: 100%;
+	margin: 0 auto 12px auto;
+	overflow: hidden;
+}
+	.circulo > img {
+		position: relative;
+		right: 7px;
+		bottom: 7px;
+	}
