@@ -78,12 +78,27 @@ body {
 				text-align: center;
 		}
 		.main-footer {
-			text-align: center;
-			line-height: 3rem;
 			position: absolute;
 			bottom: 0;
 			width: calc(100% - 24px);
 		}
+			.social-icon {
+				width: 48px;
+				display: inline-block;
+				position: relative;
+				bottom: 50px;
+				margin-top: 0;
+				margin-left: calc(100% - 64px);
+			}
+			.social-icon:hover {
+				-webkit-filter: blur(2px);
+          				filter: blur(2px);
+			}
+			.main-footer > p:first-child {
+				width: 35%;
+				display: inline-block;
+				text-align: right;
+			}
 
 a {
   color: white;
